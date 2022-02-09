@@ -1,0 +1,131 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Hoşgeldiniz</h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="{% url 'notes' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/notes.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Notlar
+            </h5>
+            Hatırlamak için notlar oluşturun. Silinene kadar burada kalacaklar.
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="{% url 'homework' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/homework.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Ödevler
+            </h5>
+            Ödevler ekleyin ve onlara son tarihler atayın. Son teslim tarihlerine göre öncelikli olarak gösterilecekler.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'youtube' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/youtube.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Youtube
+            </h5>
+            Youtube'da arama yapın ve youtube'da oynatmak için istediğiniz videoyu seçin.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'todo' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/todo.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Yapılacaklar
+            </h5>
+            Gününüz için yapılacaklar listelerinizi ekleyin ve işiniz bittiğinde bunları kaldırın
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-3 ">
+      <a href="{% url 'books' %}">
+        <div class="card mt-20">
+          <img class="card-img-top" src="{% static 'images/books.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Kitaplar
+            </h5>
+            İstediğiniz konuyla ilgili kitapları buradan arayabilirsiniz.
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="col-md-3">
+      <a href="{% url 'pdf' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/pdfs.jpg' %}" alt="PDFs image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Modül-Kitap
+            </h5>
+            Ders kitaplarını ve PDF dosyalarını görüntüleyebilir veya indirebilirsiniz.
+          </div>
+        </div>
+      </a>
+    </div>
+
+    
+
+    
+    <div class="col-md-3">
+      <a href="wiki">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/wiki.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              WikiPedia
+            </h5>
+            Wikipedia'dan herhangi bir konuyu arayın.
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="col-md-3">
+      <a href="{% url 'conversion' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/conversion.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Çevirici
+            </h5>
+            Çeşitli birimleri çevirmeniz için bir araç.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+<br><br><br>
+</section>
+{% endblock content %}
